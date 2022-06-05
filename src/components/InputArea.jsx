@@ -8,16 +8,9 @@ const InputArea = (props) => {
     const handleChange = (event) => {
         const {name, value} = event.target;
         setNote((preValue) => {
-            if (name === "title") {
-                return {
-                    title: value,
-                    content: preValue.content
-                };
-            }else if (name === "content") {
-                return {
-                    title: preValue.title,
-                    content: value
-                };
+            return {
+                ...preValue,
+                [name]: value
             }
         })
     }
