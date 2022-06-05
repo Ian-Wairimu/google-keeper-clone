@@ -1,0 +1,22 @@
+main {
+    background-color: white;
+    display: block;
+    width: 20%;
+    padding: 30px 10px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #ccc;
+    float: left;
+}
+main h2 {
+    font-size: 1.1rem;
+}
+button {
+    position: relative;
+    float: right;
+    background-color: white;
+    color: #f5ba13;
+    border: none;
+    height: 36px;
+    cursor: pointer;
+}
