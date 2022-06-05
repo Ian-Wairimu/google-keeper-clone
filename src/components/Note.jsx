@@ -1,4 +1,5 @@
 import "./styles/note.module.css"
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Note(note) {
     return (
@@ -8,7 +9,9 @@ function Note(note) {
                 <p>{note.content}</p>
                 <button onClick={() => {
                     note.delete(note.id)
-                }}>DELETE</button>
+                }}>
+                    <DeleteIcon />
+                </button>
             </main>
         </>
     );
